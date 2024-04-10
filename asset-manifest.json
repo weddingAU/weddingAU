@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/weddingAU/static/css/main.c9fd68b9.css",
-    "main.js": "/weddingAU/static/js/main.e95ddfb5.js",
-    "static/js/787.6d1fe003.chunk.js": "/weddingAU/static/js/787.6d1fe003.chunk.js",
+    "main.js": "/weddingAU/static/js/main.da8419e2.js",
+    "static/js/787.995f3e27.chunk.js": "/weddingAU/static/js/787.995f3e27.chunk.js",
     "static/media/lavander-circle.png": "/weddingAU/static/media/lavander-circle.b819b403bce84272365c.png",
     "static/media/lemon.otf": "/weddingAU/static/media/lemon.024c8ca4a177ed80a27a.otf",
     "static/media/madelyn.otf": "/weddingAU/static/media/madelyn.049480f85318a9c4ab6d.otf",
@@ -20,11 +20,11 @@
     "static/media/3.png": "/weddingAU/static/media/3.9216df0e35d6df381028.png",
     "index.html": "/weddingAU/index.html",
     "main.c9fd68b9.css.map": "/weddingAU/static/css/main.c9fd68b9.css.map",
-    "main.e95ddfb5.js.map": "/weddingAU/static/js/main.e95ddfb5.js.map",
-    "787.6d1fe003.chunk.js.map": "/weddingAU/static/js/787.6d1fe003.chunk.js.map"
+    "main.da8419e2.js.map": "/weddingAU/static/js/main.da8419e2.js.map",
+    "787.995f3e27.chunk.js.map": "/weddingAU/static/js/787.995f3e27.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c9fd68b9.css",
-    "static/js/main.e95ddfb5.js"
+    "static/js/main.da8419e2.js"
   ]
 }
