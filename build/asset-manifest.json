@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/weddingAU/static/css/main.c9fd68b9.css",
+    "main.js": "/weddingAU/static/js/main.e95ddfb5.js",
+    "static/js/787.6d1fe003.chunk.js": "/weddingAU/static/js/787.6d1fe003.chunk.js",
+    "static/media/lavander-circle.png": "/weddingAU/static/media/lavander-circle.b819b403bce84272365c.png",
+    "static/media/lemon.otf": "/weddingAU/static/media/lemon.024c8ca4a177ed80a27a.otf",
+    "static/media/madelyn.otf": "/weddingAU/static/media/madelyn.049480f85318a9c4ab6d.otf",
+    "static/media/sweet.ttf": "/weddingAU/static/media/sweet.cc42e753706b5a0d6ef5.ttf",
+    "static/media/montserrat.ttf": "/weddingAU/static/media/montserrat.9e32cee38e5268e05e87.ttf",
+    "static/media/Oranienbaum.ttf": "/weddingAU/static/media/Oranienbaum.e5625604e9200634b240.ttf",
+    "static/media/exo.otf": "/weddingAU/static/media/exo.4cc3c0816f37acdf2605.otf",
+    "static/media/czizh.ttf": "/weddingAU/static/media/czizh.4cee4f4a3385bddc39b1.ttf",
+    "static/media/closh.png": "/weddingAU/static/media/closh.05cb324af430ec515d66.png",
+    "static/media/maki.ttf": "/weddingAU/static/media/maki.9d411b80cc14eea780bf.ttf",
+    "static/media/lavander-top.png": "/weddingAU/static/media/lavander-top.1dcf46ea595c405a78f9.png",
+    "static/media/confetti.png": "/weddingAU/static/media/confetti.da67f84ff79a4246196f.png",
+    "static/media/cake.png": "/weddingAU/static/media/cake.46df2a55f7465f7aaff3.png",
+    "static/media/cheers.png": "/weddingAU/static/media/cheers.367b8f9ab0ead51f385c.png",
+    "static/media/3.png": "/weddingAU/static/media/3.9216df0e35d6df381028.png",
+    "index.html": "/weddingAU/index.html",
+    "main.c9fd68b9.css.map": "/weddingAU/static/css/main.c9fd68b9.css.map",
+    "main.e95ddfb5.js.map": "/weddingAU/static/js/main.e95ddfb5.js.map",
+    "787.6d1fe003.chunk.js.map": "/weddingAU/static/js/787.6d1fe003.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c9fd68b9.css",
+    "static/js/main.e95ddfb5.js"
+  ]
+}
