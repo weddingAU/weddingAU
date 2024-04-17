@@ -1,10 +1,16 @@
-import { Container, Names, Data } from "./styles";
+import { Container, Names, Invite } from "./styles";
 
 export default function FirstBlock() {
   return (
     <Container>
-      <Names>Андрей и Юлия</Names>
-      <Data>24 • 08 • 2024</Data>
+      <Names>
+        <b>Андрей и Юлия</b>
+        <p>24.08.2024</p>
+      </Names>
+      <Invite>
+        Приглашение <br />
+        на свадьбу
+      </Invite>
     </Container>
   );
 }

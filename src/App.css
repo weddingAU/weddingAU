@@ -8,7 +8,7 @@
   font-family: "czizh";
   src: local("czizh"), url("./font/czizh.ttf") format("truetype");
   font-weight: normal;
-}
+} */
 
 @font-face {
   font-family: "montserrat";
@@ -16,7 +16,7 @@
   font-weight: normal;
 }
 
-@font-face {
+/* @font-face {
   font-family: "sweet";
   src: local("Sweer"), url("./font/sweet.ttf") format("truetype");
   font-weight: normal;
@@ -33,8 +33,8 @@
   src: local("exo"), url("./font/cirillic.otf") format("opentype");
   font-weight: normal;
 }
-/* 
-@font-face {
+
+/* @font-face {
   font-family: "madelyn";
   src: local("madelyn"), url("./font/madelyn.otf") format("opentype");
   font-weight: normal;

@@ -11,7 +11,6 @@ export const Container = styled.div`
   background-size: cover;
   gap: 32px;
   height: 100vh;
-  height: 100dvh;
 `;
 
 export const Data = styled.h2`
@@ -40,31 +39,93 @@ export const Data = styled.h2`
   }
 `;
 
-export const Names = styled.span`
+export const Circle = styled.span`
   display: flex;
-  position: relative;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  font-family: "cyrillic";
-  gap: 8px;
   margin: 40px 0;
-  font-size: 78px;
   color: #486f91;
-  width: 350px;
-  height: 350px;
   border-radius: 50%;
-  line-height: 149%;
   align-items: center;
   justify-content: center;
   background-color: #fffff5;
+`;
+
+export const Names = styled(Circle)`
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  font-family: "cyrillic";
+  gap: 8px;
+  font-size: 78px;
+  width: 350px;
+  height: 350px;
+  line-height: 149%;
+  animation: animate 1.5s forwards;
+  animation-delay: 3s;
 
   @keyframes animate {
     0% {
       opacity: 0;
+      left: 0;
     }
     100% {
       opacity: 1;
+      left: 20%;
+    }
+  }
+  p {
+    padding: 0;
+    margin: 0;
+    font-family: "montserrat";
+    font-size: 18px;
+    line-height: 18px;
+  }
+  b {
+    font-weight: 300;
+  }
+  @media (max-width: 680px) {
+    width: 305px;
+    height: 305px;
+    left: 2%;
+    animation: animateMobile 1.5s forwards;
+
+    @keyframes animateMobile {
+      0% {
+        opacity: 0;
+        left: 0;
+      }
+      100% {
+        opacity: 1;
+        left: 2%;
+      }
+    }
+  }
+`;
+
+export const Invite = styled(Circle)`
+  position: absolute;
+  font-family: "montserrat";
+  bottom: 0;
+  right: 20%;
+  gap: 8px;
+  font-size: 18px;
+  width: 200px;
+  line-height: 189%;
+  height: 200px;
+  animation: animateRight 1.5s forwards;
+  animation-delay: 3s;
+  text-transform: uppercase;
+
+  @keyframes animateRight {
+    0% {
+      opacity: 0;
+      right: 0;
+    }
+    100% {
+      opacity: 1;
+      right: 20%;
     }
   }
   p {
@@ -74,7 +135,18 @@ export const Names = styled.span`
   }
 
   @media (max-width: 680px) {
-    width: 305px;
-    height: 305px;
+    right: 2%;
+    animation: animateRightMobile 1.5s forwards;
+
+    @keyframes animateRightMobile {
+      0% {
+        opacity: 0;
+        right: 0;
+      }
+      100% {
+        opacity: 1;
+        right: 2%;
+      }
+    }
   }
 `;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  padding: 80px 0;
+  padding: 60px 0;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -64,7 +64,7 @@ export const Info = styled.div`
 export const Title = styled.p`
   font-size: 74px;
   line-height: 52px;
-  color: #534f76;
+  color: #486f91;
   text-align: center;
   opacity: 0;
 

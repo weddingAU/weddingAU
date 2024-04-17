@@ -3,7 +3,7 @@ import {
   Info,
   Title,
   Text,
-  Bg2,
+  Bg,
   Times,
   Timing,
   Time,
@@ -17,9 +17,6 @@ import {
   Dot4,
   TimingLine,
   TimingLine2,
-  Bg3,
-  Bg4,
-  Bg5,
 } from "./styles";
 import { useIsInViewport } from "../../hooks/useIsInViewport";
 import { useRef, useEffect, useState } from "react";
@@ -45,10 +42,7 @@ export default function FourthBlock() {
 
   return (
     <Container>
-      <Bg2 />
-      <Bg3 />
-      <Bg4></Bg4>
-      <Bg5></Bg5>
+      <Bg />
       <Info>
         {isLoadedTitle ? (
           <Title key='displayesTitle' ref={ref1}>

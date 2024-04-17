@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Datetime from "./assets/24.png";
 
 export const Container = styled.div`
-  padding: 80px 0;
+  padding: 60px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,55 +13,23 @@ export const Container = styled.div`
   }
 `;
 
-export const Bg = styled.div`
-  position: absolute;
-  top: -120px;
-  left: 0;
-  background-size: 600px;
-  height: 800px;
-  width: 800px;
-  background-repeat: no-repeat;
-  opacity: 0.1;
-  transform: rotate(337deg);
-
-  @media (max-width: 680px) {
-    left: -100px;
-    background-size: 400px;
-    height: 400px;
-    width: 400px;
-  }
-`;
-
-export const Bg2 = styled.div`
-  position: absolute;
-  bottom: 200px;
-  right: 0;
-  background-size: 600px;
-  height: 400px;
-  width: 400px;
-  background-repeat: no-repeat;
-  opacity: 0.1;
-
-  @media (max-width: 680px) {
-    right: -100px;
-    background-size: 400px;
-    height: 400px;
-    width: 400px;
-  }
-`;
-
 export const Info = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-family: "madelyn";
   width: 350px;
 `;
 
 export const Title = styled.p`
   font-size: 64px;
-  line-height: 52px;
-  color: #534f76;
+  font-family: "cyrillic";
+  line-height: 1.5;
+  color: #486f91;
   text-align: center;
   opacity: 0;
-
+  margin: 0;
   animation: aniTB1 1.5s forwards;
   animation-duration: 2s;
   @keyframes aniTB1 {
@@ -75,51 +43,57 @@ export const Title = styled.p`
 `;
 
 export const Text = styled.p`
-  font-family: "czizh";
-  font-size: 24px;
+  font-family: "montserrat";
+  font-size: 22px;
   font-weight: 400;
-  color: #534f76;
+  color: #486f91;
   text-align: center;
   opacity: 0.8;
   animation: aniTB1 3s forwards;
 `;
 
 export const Date = styled.p`
-  font-family: "madelyn";
+  font-family: "cyrillic";
   font-size: 42px;
   font-weight: 400;
-  color: #534f76;
+  color: #486f91;
   text-align: center;
   animation: aniTB1 3s forwards;
 `;
 
 export const Month = styled.p`
+  font-family: "cyrillic";
   font-size: 64px;
-  line-height: 52px;
-  color: #534f76;
+  line-height: 1.5;
+  color: #486f91;
   text-align: center;
-  margin: 42px 0 0;
+  margin: 12px 0 0;
   animation: aniTB1 3s forwards;
+
+  @media (max-width: 450px) {
+    font-size: 42px;
+  }
 `;
 
 export const Calendar = styled.div`
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
   position: relative;
   background-image: url(${Datetime});
   background-size: cover;
   background-repeat: no-repeat;
-  height: 230px;
-  width: 350px;
   animation: aniTB1 3s forwards;
   animation-delay: 1s;
   opacity: 0;
+  margin-top: 32px;
 
   svg {
     position: absolute;
     width: 40px;
     height: 40px;
-    bottom: 30px;
-    right: 81px;
-
+    bottom: 165px;
+    right: 96px;
     animation: aniHeart 3s infinite;
 
     @keyframes aniHeart {
@@ -132,6 +106,29 @@ export const Calendar = styled.div`
       100% {
         transform: scale(1);
       }
+    }
+  }
+
+  @media (max-width: 680px) {
+    height: 400px;
+    width: 400px;
+
+    svg {
+      bottom: 129px;
+      right: 72px;
+    }
+  }
+
+  @media (max-width: 450px) {
+    height: 300px;
+    margin-left: 0;
+    width: 300px;
+
+    svg {
+      width: 24px;
+      height: 24px;
+      bottom: 100px;
+      right: 57px;
     }
   }
 `;

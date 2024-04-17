@@ -49,14 +49,11 @@ export default function FifthBlock() {
         )}
         {isLoadedColor ? (
           <Rounds key='loaded' ref={refColors}>
-            <Round color={"#d3c7d8"} />
-            <Round color={"#b297be"} />
-            <Round color={"#c3a3bf"} />
-            <Round color={"#907c9e"} />
-            <Round color={"#FAE2FE"} />
-            <Round color={"#F9B7E1"} />
-            <Round color={"#F9DFF1"} />
-            <Round color={"#F4E7E4"} />
+            <Round color={"#fdcecd"} />
+            <Round color={"#f9bcbc"} />
+            <Round color={"#a7b8e1"} />
+            <Round color={"#7c9ad5"} />
+            <Round color={"#fff6db"} />
           </Rounds>
         ) : (
           <Rounds key='hidden' ref={refColors}></Rounds>

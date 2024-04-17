@@ -56,7 +56,7 @@ export default function ThirdBlock() {
             frameborder='0'
           ></iframe>
         )}
-        <Btn onClick={handleOpenMap}>Открыть карту</Btn>
+        <Btn onClick={handleOpenMap}>ТУТ БУДЕТ КАРТАА</Btn>
       </Info>
     </Container>
   );

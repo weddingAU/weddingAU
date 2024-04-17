@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  padding: 80px 0;
+  padding: 60px 0;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -64,17 +64,19 @@ export const Info = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "madelyn";
+  font-family: "montserrat";
   width: 350px;
   z-index: 2;
 `;
 
 export const Title = styled.p`
   font-size: 64px;
-  line-height: 52px;
-  color: #534f76;
+  font-family: "cyrillic";
+  line-height: 1.5;
+  color: #486f91;
   text-align: center;
   opacity: 0;
+  margin: 12px 0;
 
   animation: aniTB1 1.5s forwards;
   animation-duration: 2s;
@@ -89,29 +91,24 @@ export const Title = styled.p`
 `;
 
 export const Text = styled.p`
-  font-family: "czizh";
-  font-size: 24px;
+  font-family: "montserrat";
+  font-size: 18px;
   font-weight: 400;
-  color: #534f76;
+  color: #486f91;
   text-align: center;
   opacity: 0.8;
   animation: aniTB1 3s forwards;
 `;
 
 export const Btn = styled.button`
-  background-image: linear-gradient(
-    92.88deg,
-    #455eb5 9.16%,
-    #5643cc 43.89%,
-    #673fd7 64.72%
-  );
+  background-color: #486f91;
   border-radius: 8px;
   border-style: none;
   box-sizing: border-box;
   color: #ffffff;
   cursor: pointer;
   flex-shrink: 0;
-  font-family: "czizh";
+  font-family: "montserrat";
   font-size: 22px;
   font-weight: 500;
   height: 42px;

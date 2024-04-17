@@ -39,8 +39,8 @@ function App() {
         <FourthBlock />
         <ThirdBlock />
         <FifthBlock />
-        <SixBlock />
-        <SevenBlock />
+        {/* <SixBlock />
+        <SevenBlock /> */}
       </Container>
     </>
   );

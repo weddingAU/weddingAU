@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  padding: 80px 0;
+  padding: 60px 0;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -64,7 +64,7 @@ export const Info = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "madelyn";
+  font-family: "montserrat";
   width: 350px;
   z-index: 2;
 `;
@@ -72,8 +72,11 @@ export const Info = styled.div`
 export const Title = styled.p`
   font-size: 64px;
   line-height: 52px;
-  color: #534f76;
+  font-family: "cyrillic";
+  line-height: 1.5;
+  color: #486f91;
   text-align: center;
+  margin: 12px 0;
   opacity: 0;
 
   animation: aniTB1 1.5s forwards;
@@ -89,10 +92,10 @@ export const Title = styled.p`
 `;
 
 export const Text = styled.p`
-  font-family: "czizh";
-  font-size: 24px;
+  font-family: "montserrat";
+  font-size: 18px;
   font-weight: 400;
-  color: #534f76;
+  color: #486f91;
   text-align: center;
   opacity: 0.8;
   animation: aniTB1 3s forwards;

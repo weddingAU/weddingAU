@@ -54,7 +54,7 @@ export const Info = styled.div`
 export const Title = styled.p`
   font-size: 74px;
   line-height: 52px;
-  color: #534f76;
+  color: #486f91;
   text-align: center;
   opacity: 0;
 
@@ -109,7 +109,7 @@ export const Btn = styled.button`
 export const Numbers = styled.div`
   align-items: center;
   color: black;
-  color: #534f76;
+  color: #486f91;
   font-family: "oranienbaum";
   display: flex;
   flex-direction: column;
