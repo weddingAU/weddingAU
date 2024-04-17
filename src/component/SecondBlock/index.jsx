@@ -71,8 +71,7 @@ export default function SecondBlock() {
         )}
         {isLoadedText ? (
           <Text key='displayesText' ref={refText}>
-            Самое главное и ценное в жизни - это семья! Сначала, в которой ты
-            рождаешься, а затем, которую ты создаешь
+            В семье мы рождаемся. В семье мы растём. Семью мы создаём сами.
           </Text>
         ) : (
           <Text key='hiddenText' ref={refText}>
@@ -81,7 +80,7 @@ export default function SecondBlock() {
         )}
         {isLoadedDate ? (
           <Date key='displayesDate' ref={refDate}>
-            27 июля 2024 года
+            24 августа 2024 года
           </Date>
         ) : (
           <Date key='hiddenDate' ref={refDate}>
@@ -93,8 +92,7 @@ export default function SecondBlock() {
             Состоится счастливое и значимое событие - день нашей свадьбы
             <br />
             <br />
-            Приглашаем вас стать гостем этого волнительного и счастливого
-            события
+            Приглашаем Вас стать гостем этого волнительного и чудесного момента!
           </Text>
         ) : (
           <Text key='hiddenText2' ref={refText2}>
@@ -104,7 +102,7 @@ export default function SecondBlock() {
         )}
         {isLoadedMonth ? (
           <Month key='displayesMonth' ref={refMonth}>
-            Июль 2024
+            Август 2024
           </Month>
         ) : (
           <Month key='hiddenMonth' ref={refMonth}>

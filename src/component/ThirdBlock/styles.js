@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import lavanderTop from "../FirstBlock/assets/lavander-top.png";
-import leaf from "../FirstBlock/assets/leaf.png";
 
 export const Container = styled.div`
   padding: 80px 0;
@@ -33,7 +31,6 @@ export const Bg = styled.div`
   top: 227px;
   position: absolute;
   right: calc(50% - 342px);
-  background-image: url(${lavanderTop});
   background-size: 400px;
   height: 400px;
   width: 400px;
@@ -50,7 +47,6 @@ export const Bg2 = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url(${leaf});
   background-size: 600px;
   height: 400px;
   width: 400px;

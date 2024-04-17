@@ -40,8 +40,8 @@ export default function ThirdBlock() {
         )}
         {isLoadedText ? (
           <Text key='displayesText' ref={refText}>
-            Торжество будет проходить в ресторане "Хурма",(развлекательный
-            комплекс Белый Медведь, 2 этаж)
+            Торжество будет проходить на площадке "Огни Саранска" (проспект 70
+            лет Октября, 169 В)
           </Text>
         ) : (
           <Text key='hiddenText' ref={refText}>

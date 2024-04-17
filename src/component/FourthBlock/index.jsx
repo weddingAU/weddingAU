@@ -68,7 +68,7 @@ export default function FourthBlock() {
                   <Circle>
                     <Im src={cheers} />
                   </Circle>
-                  <Time>15:30</Time>
+                  <Time>15:00</Time>
                   <Text>
                     Сбор
                     <br />
@@ -79,7 +79,7 @@ export default function FourthBlock() {
                   <Circle>
                     <Im src={cake} />
                   </Circle>
-                  <Time>21:00</Time>
+                  <Time>20:30</Time>
                   <Text>
                     Шедевр <br />
                     кондитерского
@@ -99,13 +99,13 @@ export default function FourthBlock() {
                   <Circle>
                     <Im src={closh} />
                   </Circle>
-                  <Time>16:00</Time>
+                  <Time>15:30</Time>
                   <Text>
                      Начало
                     <br />
                     свадебного
                     <br />
-                    ужина
+                    банкета
                   </Text>
                 </Times2>
 
@@ -113,7 +113,7 @@ export default function FourthBlock() {
                   <Circle>
                     <Im src={confetti} />
                   </Circle>
-                  <Time>22:00</Time>
+                  <Time>21:30</Time>
                   <Text>Финал</Text>
                 </Times2>
               </TimingLine2>

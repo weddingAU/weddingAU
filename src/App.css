@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: "maki";
   src: local("maki"), url("./font/maki.ttf") format("truetype");
   font-weight: normal;
@@ -26,8 +26,14 @@
   font-family: "exo";
   src: local("exo"), url("./font/exo.otf") format("opentype");
   font-weight: normal;
-}
+} */
 
+@font-face {
+  font-family: "cyrillic";
+  src: local("exo"), url("./font/cirillic.otf") format("opentype");
+  font-weight: normal;
+}
+/* 
 @font-face {
   font-family: "madelyn";
   src: local("madelyn"), url("./font/madelyn.otf") format("opentype");
@@ -44,7 +50,7 @@
   font-family: "oranienbaum";
   src: local("Oranienbaum"), url("./font/Oranienbaum.ttf") format("truetype");
   font-weight: normal;
-}
+} */
 
 .App {
   text-align: center;

@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   min-height: 100vh;
   min-width: 100vw;
-  background-color: #f5f4f7;
+  background-color: #f2dcd4;
   overflow: hidden;
   opacity: 0;
   animation: aniLoad 1ms forwards;

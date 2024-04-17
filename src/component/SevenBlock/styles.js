@@ -1,7 +1,5 @@
 import styled from "styled-components";
 import lavander from "./assets/3.png";
-import leaf from "../FirstBlock/assets/leaf.png";
-import lavanderTop from "../FirstBlock/assets/lavander-top.png";
 
 export const Container = styled.div`
   padding: 80px 0 0;
@@ -31,7 +29,6 @@ export const Bg2 = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url(${leaf});
   background-size: 600px;
   height: 400px;
   width: 400px;
@@ -139,7 +136,6 @@ export const Images = styled.div`
 `;
 
 export const BottomImage = styled.div`
-  background-image: url(${lavanderTop});
   position: absolute;
   bottom: -108px;
   -webkit-transform: rotate(180deg);
@@ -152,7 +148,6 @@ export const BottomImage = styled.div`
 `;
 
 export const BottomImageLeft = styled.div`
-  background-image: url(${lavanderTop});
   position: absolute;
   bottom: -108px;
   -webkit-transform: rotate(180deg);

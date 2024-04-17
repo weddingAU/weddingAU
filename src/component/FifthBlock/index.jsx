@@ -39,8 +39,8 @@ export default function FifthBlock() {
         )}
         {isLoadedText ? (
           <Text key='displayesText' ref={refText}>
-            Мы будем очень рады, если ваши наряды будут соответствовать цветовой
-            гамме нашей свадьбы
+            Будем крайне признательны, если Ваши наряды будут соответствовать
+            цветовой гамме нашей свадьбы
           </Text>
         ) : (
           <Text key='hiddenText' ref={refText}>
