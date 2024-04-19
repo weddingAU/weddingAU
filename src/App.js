@@ -5,6 +5,7 @@ import ThirdBlock from "./component/ThirdBlock";
 import FourthBlock from "./component/FourthBlock";
 import FifthBlock from "./component/FifthBlock";
 import SixBlock from "./component/SixBlock";
+import Suggection from "./component/Suggection";
 import SevenBlock from "./component/SevenBlock";
 import "./font/sweet.ttf";
 import "./font/montserrat.ttf";
@@ -36,11 +37,12 @@ function App() {
       <Container>
         <FirstBlock />
         <SecondBlock />
-        <FourthBlock />
         <ThirdBlock />
+        <FourthBlock />
         <FifthBlock />
-        {/* <SixBlock />
-        <SevenBlock /> */}
+        <Suggection />
+        <SixBlock />
+        <SevenBlock />
       </Container>
     </>
   );

@@ -1,64 +1,64 @@
-import { Container, Bg, Info, Title, Text, Bg2, Btn } from "./styles";
+import { Container, Bg, Info, Title, Text } from "./styles";
 import { useIsInViewport } from "../../hooks/useIsInViewport";
 import { useRef, useEffect, useState } from "react";
 
-export default function ThirdBlock() {
+export default function Suggection() {
   const ref1 = useRef(null);
   const refText = useRef(null);
+  const refText2 = useRef(null);
 
   const [isLoadedTitle, setIsLoadedTitle] = useState(false);
-  const [openMap, setOpenMap] = useState(false);
 
   const [isLoadedText, setIsLoadedText] = useState(false);
+  const [isLoadedText2, setIsLoadedText2] = useState(false);
 
   const isInViewport1 = useIsInViewport(ref1);
   const isInViewportText = useIsInViewport(refText);
+  const isInViewportText2 = useIsInViewport(refText2);
 
-  const handleOpenMap = () => {
-    setOpenMap(!openMap);
-  };
   useEffect(() => {
     // 👇️ listen for changes
     if (!isLoadedTitle && isInViewport1) setIsLoadedTitle(true);
+    if (!isLoadedText2 && isInViewportText2) setIsLoadedText2(true);
     if (!isLoadedText && isInViewportText) setIsLoadedText(true);
-  }, [isInViewport1, isInViewportText]);
+  }, [isInViewport1, isInViewportText, isInViewportText2]);
 
   return (
     <Container>
-      <Bg />
-      <Bg2 />
       <Info>
         {isLoadedTitle ? (
           <Title key='displayesTitle' ref={ref1}>
-            Место
-            <br /> проведения
+            Пожелания
           </Title>
         ) : (
           <Title key='hiddenTitle' ref={ref1}>
-            <br /> <br /> <br />
+            <br />
           </Title>
         )}
+        <Bg />
+
         {isLoadedText ? (
           <Text key='displayesText' ref={refText}>
-            Торжество будет проходить на площадке "Огни Саранска" (проспект 70
-            лет Октября, 169 В)
+            Мы не хотим утруждать Вас выбором подарка, поэтому будем рады вкладу
+            в бюджет нашей молодой семьи
           </Text>
         ) : (
           <Text key='hiddenText' ref={refText}>
             <br /> <br /> <br /> <br />
           </Text>
         )}
-        {openMap && (
-          <iframe
-            src='https://yandex.ru/map-widget/v1/?um=constructor%3Ae58a1a23ae190dc114adf38fc47eeb7807ea319eb681bc65440be5e1a3aab15e&amp;source=constructor'
-            height='350'
-            width='350'
-            frameborder='0'
-          ></iframe>
+        <Bg />
+
+        {isLoadedText2 ? (
+          <Text key='displayesText2' ref={refText2}>
+            Так же просим Вас в качестве альтернативы цветам дарить бутылку
+            любимого напитка
+          </Text>
+        ) : (
+          <Text key='hiddenText2' ref={refText2}>
+            <br /> <br /> <br /> <br />
+          </Text>
         )}
-        <Btn onClick={handleOpenMap}>
-          {!openMap ? "Открыть карту" : "Скрыть карту"}
-        </Btn>
       </Info>
     </Container>
   );
