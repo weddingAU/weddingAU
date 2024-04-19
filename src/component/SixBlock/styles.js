@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  padding: 60px 0;
+  padding: 0 0 60px 0;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -25,34 +25,13 @@ export const Bg = styled.div`
   background-repeat: no-repeat;
   opacity: 0.2;
   z-index: 1;
-
-  @media (max-width: 680px) {
-    /* display: none; */
-  }
-`;
-
-export const Bg2 = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-size: 600px;
-  height: 400px;
-  width: 400px;
-  background-repeat: no-repeat;
-  opacity: 0.1;
-
-  @media (max-width: 680px) {
-    background-size: 400px;
-    height: 400px;
-    width: 400px;
-  }
 `;
 
 export const Info = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "madelyn";
+  font-family: "montserrat";
   width: 350px;
   z-index: 2;
 
@@ -62,14 +41,15 @@ export const Info = styled.div`
 `;
 
 export const Title = styled.p`
-  font-size: 74px;
-  line-height: 52px;
+  font-size: 64px;
+  font-family: "cyrillic";
+  line-height: 1.5;
   color: #486f91;
   text-align: center;
   opacity: 0;
-
   animation: aniTB1 1.5s forwards;
   animation-duration: 2s;
+  margin-bottom: 0;
   @keyframes aniTB1 {
     0% {
       opacity: 0;
@@ -81,10 +61,9 @@ export const Title = styled.p`
 `;
 
 export const Text = styled.p`
-  font-family: "maki";
-  color: #534f75;
+  color: #486f91;
   font-size: 17px;
-  font-family: "maki";
+  font-family: "montserrat";
   line-height: 1;
   font-weight: 400;
   opacity: 0;
@@ -96,7 +75,7 @@ export const Text = styled.p`
       opacity: 0;
     }
     100% {
-      opacity: 0.6;
+      opacity: 0.8;
     }
   }
 `;

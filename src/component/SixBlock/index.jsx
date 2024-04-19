@@ -1,4 +1,6 @@
-import { Container, Bg, Info, Title, Text, Bg2 } from "./styles";
+import { Container, Info, Title, Text } from "./styles";
+
+import { Bg } from "../FourthBlock/styles";
 import { useIsInViewport } from "../../hooks/useIsInViewport";
 import { useRef, useEffect, useState } from "react";
 
@@ -22,17 +24,13 @@ export default function SixBlock() {
   return (
     <Container>
       <Bg />
-      <Bg2 />
       <Info>
         {isLoadedTitle ? (
           <Title key='displayesTitle' ref={ref1}>
-            Анкета <br />
-            гостя
+            Анкета гостя
           </Title>
         ) : (
           <Title key='hiddenTitle' ref={ref1}>
-            <br />
-            <br />
             <br />
           </Title>
         )}
@@ -46,10 +44,10 @@ export default function SixBlock() {
           </Text>
         )}
         <iframe
-          src='https://forms.yandex.ru/u/65d4d69f73cee744aa52da81/?iframe=1'
+          src='https://forms.yandex.ru/u/66226743d046881a906de1f5/?iframe=1'
           frameborder='0'
-          name='ya-form-65d4d69f73cee744aa52da81'
-          height='580'
+          name='ya-form-66226743d046881a906de1f5'
+          height='948'
           width='370'
           scrolling='no'
         ></iframe>
