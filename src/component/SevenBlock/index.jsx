@@ -2,21 +2,22 @@ import {
   Container,
   Info,
   Text,
-  Bg2,
   Numbers,
   DatesBeforeWedding,
-  BottomImage,
-  BottomImageLeft,
+  Invite,
 } from "./styles";
 import { useIsInViewport } from "../../hooks/useIsInViewport";
 import { useRef, useEffect, useState } from "react";
 
 export default function SevenBlock() {
   const refText1 = useRef(null);
+  const refText2 = useRef(null);
 
   const [isLoadedText1, setIsLoadedText1] = useState(false);
+  const [isLoadedText2, setIsLoadedText2] = useState(false);
 
   const isInViewportText1 = useIsInViewport(refText1);
+  const isInViewportText2 = useIsInViewport(refText2);
 
   var endDate = new Date("Aug 24, 2024 15:00:00").getTime();
   var decCache = [],
@@ -64,24 +65,36 @@ export default function SevenBlock() {
   useEffect(() => {
     // 👇️ listen for changes
     if (!isLoadedText1 && isInViewportText1) setIsLoadedText1(true);
-  }, [isInViewportText1]);
+    if (!isLoadedText2 && isInViewportText2) setIsLoadedText2(true);
+  }, [isInViewportText1, isInViewportText2]);
 
   return (
     <Container>
-      <Bg2 />
-      <Info>
-        <Text key='displayesText1' ref={refText1}>
-          <p>Мы будем рады видеть Вас на нашем празднике!</p>
-          <DatesBeforeWedding>
-            <Numbers id='timer-days' />
-            <Numbers id='timer-hours' />
-            <Numbers id='timer-mins' />
-            <Numbers id='timer-secs' />
-          </DatesBeforeWedding>
-          <BottomImage />
-          <BottomImageLeft />
-        </Text>
-      </Info>
+      {isInViewportText1 ? (
+        <div key='infoHidden' ref={refText1}></div>
+      ) : (
+        <Info key='infoNew' ref={refText1}>
+          <Text>
+            <p>Ждем Вас через...</p>
+            <DatesBeforeWedding>
+              <Numbers id='timer-days' />
+              <p>:</p>
+              <Numbers id='timer-hours' />
+              <p>:</p>
+              <Numbers id='timer-mins' />
+              <p>:</p>
+              <Numbers id='timer-secs' />
+            </DatesBeforeWedding>
+          </Text>
+        </Info>
+      )}
+      {isInViewportText2 ? (
+        <div key='h' ref={refText2}></div>
+      ) : (
+        <Invite key='i' ref={refText2}>
+          С ЛЮБОВЬЮ, АНДРЕЙ И ЮЛИЯ
+        </Invite>
+      )}
     </Container>
   );
 }

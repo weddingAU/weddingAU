@@ -1,78 +1,98 @@
 import styled from "styled-components";
-import lavander from "./assets/3.png";
+import bg from "../FirstBlock/assets/bg.jpeg";
 
 export const Container = styled.div`
-  padding: 80px 0 0;
+  position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  background-image: url(${bg});
+  background-size: cover;
+  gap: 32px;
+  height: 100vh;
+`;
+
+export const Circle = styled.span`
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  position: relative;
-  overflow: hidden;
-
-  @media (max-width: 680px) {
-    padding: 20px 0 80px;
-  }
-`;
-
-export const Bg = styled.div`
-  transform: rotate(90deg);
-  background-image: url(${lavander});
-  background-size: 200px;
-  height: 200px;
-  width: 200px;
-  background-repeat: no-repeat;
-  z-index: 1;
-`;
-
-export const Bg2 = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-size: 600px;
-  height: 400px;
-  width: 400px;
-  background-repeat: no-repeat;
-  opacity: 0.1;
-
-  @media (max-width: 680px) {
-    background-size: 400px;
-    height: 400px;
-    width: 400px;
-  }
-`;
-
-export const Info = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: "madelyn";
-  width: 350px;
-  z-index: 2;
-`;
-
-export const Title = styled.p`
-  font-size: 74px;
-  line-height: 52px;
-  color: #486f91;
   text-align: center;
+  margin: 40px 0;
+  color: #486f91;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: #fffff5;
+`;
+
+export const Info = styled(Circle)`
+  position: absolute;
+  top: 0%;
+  left: 20%;
+  font-family: "cyrillic";
+  gap: 8px;
+  font-size: 72px;
+  width: 450px;
+  height: 450px;
+  line-height: 149%;
+  animation: animate 1.5s forwards;
+  animation-delay: 1s;
   opacity: 0;
 
-  animation: aniTB1 1.5s forwards;
-  animation-duration: 2s;
-  @keyframes aniTB1 {
+  @keyframes animate {
     0% {
       opacity: 0;
+      left: 0;
     }
     100% {
       opacity: 1;
+      left: 20%;
+    }
+  }
+  p {
+    padding: 0;
+    font-family: "cyrillic";
+    font-size: 68px;
+    margin: 0;
+  }
+  b {
+    font-weight: 300;
+  }
+  @media (max-width: 680px) {
+    width: 350px;
+    height: 350px;
+    left: 2%;
+    animation: animateMobile 1.5s forwards;
+
+    p {
+      font-size: 45px;
+    }
+
+    @keyframes animateMobile {
+      0% {
+        opacity: 0;
+        left: 0;
+      }
+      100% {
+        opacity: 1;
+        left: 2%;
+      }
+    }
+  }
+  @media (max-width: 400px) {
+    width: 300px;
+    height: 300px;
+
+    p {
+      font-size: 45px;
     }
   }
 `;
 
 export const Text = styled.p`
   font-family: "czizh";
-  color: #534f75;
+  color: #486f91;
   font-size: 22px;
   line-height: 1;
   font-weight: 400;
@@ -126,52 +146,90 @@ export const Numbers = styled.div`
   align-items: center;
   color: black;
   color: #486f91;
-  font-family: "oranienbaum";
+  font-family: "montserrat";
   display: flex;
   flex-direction: column;
-  font-size: 44px;
+  font-size: 52px;
   height: 100%;
   justify-content: center;
   gap: 4px;
-  width: 80px;
 
   span {
     font-size: 14px;
+    margin-top: 12px;
+  }
+
+  @media (max-width: 680px) {
+    font-size: 32px;
+    span {
+      font-size: 14px;
+      margin-top: 8px;
+    }
+  }
+  @media (max-width: 400px) {
+    font-size: 28px;
+    span {
+      font-size: 12px;
+      margin-top: 4px;
+    }
   }
 `;
 
 export const DatesBeforeWedding = styled.div`
   display: flex;
+  align-items: center;
   margin: 32px 0 0;
-  padding-bottom: 120px;
+
+  p {
+    font-size: 72px;
+    margin: 0 8px;
+  }
 `;
 
-export const Images = styled.div`
-  height: 120px;
-  width: 100%;
-`;
-
-export const BottomImage = styled.div`
+export const Invite = styled(Circle)`
   position: absolute;
-  bottom: -108px;
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(188deg);
-  background-size: 300px;
-  height: 300px;
-  width: 300px;
-  right: -140px;
-`;
+  font-family: "montserrat";
+  bottom: 0;
+  right: 20%;
+  gap: 8px;
+  font-size: 18px;
+  width: 200px;
+  line-height: 189%;
+  height: 200px;
+  animation: animateRight 1.5s forwards;
+  animation-delay: 1s;
+  text-transform: uppercase;
+  opacity: 0;
 
-export const BottomImageLeft = styled.div`
-  position: absolute;
-  bottom: -108px;
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(188deg);
-  background-size: 300px;
-  height: 300px;
-  width: 300px;
-  left: -140px;
-  transform: scale(1, -1);
+  @keyframes animateRight {
+    0% {
+      opacity: 0;
+      right: 0;
+    }
+    100% {
+      opacity: 1;
+      right: 20%;
+    }
+  }
+  p {
+    padding: 0;
+    margin: 0;
+    font-size: 48px;
+  }
+
+  @media (max-width: 680px) {
+    right: 2%;
+    animation: animateRightMobile 1.5s forwards;
+
+    @keyframes animateRightMobile {
+      0% {
+        opacity: 0;
+        right: 0;
+      }
+      100% {
+        opacity: 1;
+        right: 2%;
+      }
+    }
+  }
 `;

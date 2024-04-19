@@ -21,10 +21,6 @@ export const Bg = styled.div`
   background-repeat: no-repeat;
   opacity: 0.8;
   z-index: 1;
-
-  @media (max-width: 680px) {
-    display: none;
-  }
 `;
 
 export const Info = styled.div`
