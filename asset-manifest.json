@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/weddingAU/static/css/main.402abbea.css",
-    "main.js": "/weddingAU/static/js/main.867ad1e8.js",
+    "main.js": "/weddingAU/static/js/main.b8dd824e.js",
     "static/js/787.995f3e27.chunk.js": "/weddingAU/static/js/787.995f3e27.chunk.js",
     "static/media/24.png": "/weddingAU/static/media/24.8a593665e863023ecfec.png",
     "static/media/lemon.otf": "/weddingAU/static/media/lemon.024c8ca4a177ed80a27a.otf",
@@ -19,14 +19,13 @@
     "static/media/confetti.png": "/weddingAU/static/media/confetti.da67f84ff79a4246196f.png",
     "static/media/cake.png": "/weddingAU/static/media/cake.46df2a55f7465f7aaff3.png",
     "static/media/cheers.png": "/weddingAU/static/media/cheers.367b8f9ab0ead51f385c.png",
-    "static/media/3.png": "/weddingAU/static/media/3.9216df0e35d6df381028.png",
     "index.html": "/weddingAU/index.html",
     "main.402abbea.css.map": "/weddingAU/static/css/main.402abbea.css.map",
-    "main.867ad1e8.js.map": "/weddingAU/static/js/main.867ad1e8.js.map",
+    "main.b8dd824e.js.map": "/weddingAU/static/js/main.b8dd824e.js.map",
     "787.995f3e27.chunk.js.map": "/weddingAU/static/js/787.995f3e27.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.402abbea.css",
-    "static/js/main.867ad1e8.js"
+    "static/js/main.b8dd824e.js"
   ]
 }
