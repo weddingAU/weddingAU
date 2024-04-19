@@ -92,18 +92,34 @@ export const Text = styled.p`
 `;
 
 export const Btn = styled.button`
-  position: relative;
-  display: block;
-  color: white;
-  font-size: 14px;
-  text-decoration: none;
-  margin: 30px 0;
-  background-color: #c3a3bf;
-  border-radius: 10px;
-  padding: 14px 60px;
-  text-transform: uppercase;
-  overflow: hidden;
-  transition: 1s all ease;
+  background-color: #486f91;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: "montserrat";
+  font-size: 22px;
+  font-weight: 500;
+  height: 42px;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all 0.5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 32px;
+
+  :hover {
+    box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+    transition-duration: 0.1s;
+  }
+
+  @media (min-width: 768px) {
+    padding: 0 2.6rem;
+  }
 `;
 
 export const Numbers = styled.div`

@@ -7,6 +7,7 @@ import FifthBlock from "./component/FifthBlock";
 import SixBlock from "./component/SixBlock";
 import Suggection from "./component/Suggection";
 import SevenBlock from "./component/SevenBlock";
+import Contact from "./component/Contact";
 import "./font/sweet.ttf";
 import "./font/montserrat.ttf";
 import "./font/czizh.ttf";
@@ -42,6 +43,7 @@ function App() {
         <FifthBlock />
         <Suggection />
         <SixBlock />
+        <Contact />
         <SevenBlock />
       </Container>
     </>

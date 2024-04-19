@@ -1,11 +1,8 @@
 import {
   Container,
-  Bg,
   Info,
-  Title,
   Text,
   Bg2,
-  Btn,
   Numbers,
   DatesBeforeWedding,
   BottomImage,
@@ -15,15 +12,10 @@ import { useIsInViewport } from "../../hooks/useIsInViewport";
 import { useRef, useEffect, useState } from "react";
 
 export default function SevenBlock() {
-  const ref1 = useRef(null);
-  const refText = useRef(null);
   const refText1 = useRef(null);
-  const [isLoadedTitle, setIsLoadedTitle] = useState(false);
 
-  const [isLoadedText, setIsLoadedText] = useState(false);
   const [isLoadedText1, setIsLoadedText1] = useState(false);
-  const isInViewport1 = useIsInViewport(ref1);
-  const isInViewportText = useIsInViewport(refText);
+
   const isInViewportText1 = useIsInViewport(refText1);
 
   var endDate = new Date("Aug 24, 2024 15:00:00").getTime();
@@ -71,40 +63,13 @@ export default function SevenBlock() {
 
   useEffect(() => {
     // 👇️ listen for changes
-    if (!isLoadedTitle && isInViewport1) setIsLoadedTitle(true);
-    if (!isLoadedText && isInViewportText) setIsLoadedText(true);
     if (!isLoadedText1 && isInViewportText1) setIsLoadedText1(true);
-  }, [isInViewport1, isInViewportText, isInViewportText1]);
+  }, [isInViewportText1]);
 
   return (
     <Container>
       <Bg2 />
       <Info>
-        {isLoadedTitle ? (
-          <Title key='displayesTitle' ref={ref1}>
-            Контакты
-          </Title>
-        ) : (
-          <Title key='hiddenTitle' ref={ref1}>
-            <br />
-            <br />
-            <br />
-          </Title>
-        )}
-        {isLoadedText ? (
-          <Text key='displayesText' ref={refText}>
-            P.S. если вы заблудились, готовите нам сюрприз или у вас появились
-            какие-либо вопросы, вам с радостью поможет наш организатор Ксения
-          </Text>
-        ) : (
-          <Text key='hiddenText' ref={refText}>
-            <br /> <br />
-          </Text>
-        )}
-        <a href='tel:89272751199' style={{ textDecoration: "none" }}>
-          <Btn>+79272751199</Btn>
-        </a>
-        <Bg />
         <Text key='displayesText1' ref={refText1}>
           <p>Мы будем рады видеть Вас на нашем празднике!</p>
           <DatesBeforeWedding>
