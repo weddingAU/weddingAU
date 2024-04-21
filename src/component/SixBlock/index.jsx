@@ -44,9 +44,9 @@ export default function SixBlock() {
           </Text>
         )}
         <iframe
-          src='https://forms.yandex.ru/u/66226743d046881a906de1f5/?iframe=1'
+          src='https://forms.yandex.ru/u/6624e4c6d04688625f6de1eb/?iframe=1'
           frameborder='0'
-          name='ya-form-66226743d046881a906de1f5'
+          name='ya-form-6624e4c6d04688625f6de1eb'
           height='948'
           width='370'
           scrolling='no'
